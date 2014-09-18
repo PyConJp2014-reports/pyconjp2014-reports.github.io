@@ -309,25 +309,3 @@ end
 
 #Load custom rake scripts
 Dir['_rake/*.rake'].each { |r| load r }
-
-
-desc 'deploy setup'
-task :setup do
-    sh 'rm -rf _deploy'
-    sh 'git clone git@github.com:yukpiz/pyconjp2014-reports.git _deploy'
-    cd '_deploy/' do
-        sh 'git checkout gh-pages'
-    end
-end
-
-desc 'deploy to production.'
-task :deploy do
-    sh 'jekyll build'
-    sh 'rm -rf _deploy/*'
-    sh 'cp -R _site/* _deploy/'
-    cd '_deploy/' do
-        sh 'git add -A'
-        sh 'git commit -a -m "Deployed."'
-        sh 'git push origin gh-pages'
-    end
-end
