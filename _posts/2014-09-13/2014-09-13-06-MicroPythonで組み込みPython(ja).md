@@ -32,7 +32,7 @@ pyboardは、
 * Raspberry PiはGPIOが少ない(B+では少し増えた)
 * ArduinoはC++ライクな言語で開発をする必要がある
 * STM32F407評価ボード
-> 秋月電子通商で1750円  
+    * 秋月電子通商で1750円
 
 Micro Pythonのセットアップ方法
 
