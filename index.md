@@ -20,3 +20,4 @@ tagline: Joined Reports.
     {{ post.time }} &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
   {% endif %}
 {% endfor %}
+
