@@ -24,7 +24,7 @@ tagline: Joined Reports.
 * **More topic**
 
 {% for post in site.posts %}
-  {% if post.category == "more-topic" %}
+  {% if post.section == "more-topic" %}
     &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
   {% endif %}
 {% endfor %}
@@ -32,7 +32,7 @@ tagline: Joined Reports.
 * **Photos**
 
 {% for post in site.posts %}
-  {% if post.category == "photos" %}
+  {% if post.section == "photos" %}
     &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
   {% endif %}
 {% endfor %}
