@@ -5,7 +5,7 @@ tagline: Joined Reports.
 ---
 {% include JB/setup %}
 
-* September 13 (Sat)
+* **September 13 (Sat)**
 
 {% for post in site.posts %}
   {% if post.implementation == "2014-09-13" %}
@@ -13,7 +13,7 @@ tagline: Joined Reports.
   {% endif %}
 {% endfor %}
 
-* September 14 (Sun)
+* **September 14 (Sun)**
 
 {% for post in site.posts %}
   {% if post.implementation == "2014-09-14" %}
@@ -21,3 +21,18 @@ tagline: Joined Reports.
   {% endif %}
 {% endfor %}
 
+* **More topic**
+
+{% for post in site.posts %}
+  {% if post.category == "more-topic" %}
+    &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
+  {% endif %}
+{% endfor %}
+
+* **Photos**
+
+{% for post in site.posts %}
+  {% if post.category == "photos" %}
+    &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
+  {% endif %}
+{% endfor %}
