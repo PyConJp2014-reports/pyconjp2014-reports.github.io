@@ -7,6 +7,7 @@ tagline: Joined Reports.
 
 * **September 13 (Sat)**
 
+
 {% for post in site.posts %}
   {% if post.implementation == "2014-09-13" %}
     {{ post.time }} &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
