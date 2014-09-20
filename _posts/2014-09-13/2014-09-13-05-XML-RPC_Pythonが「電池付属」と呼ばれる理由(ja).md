@@ -1,5 +1,5 @@
 ---
-title: XML-RPC:Pythonが「電池付属」と呼ばれる理由(ja)
+title: XML-RPC Pythonが「電池付属」と呼ばれる理由(ja)
 layout: post
 tagline: by Ransui Iso
 implementation: "2014-09-13"
